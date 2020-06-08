@@ -1,0 +1,89 @@
+﻿# Header
+menu:
+  Home: https:/www.solidays.tk/
+  Archives: /miao/archives
+  #Categories: /miao/categories
+  #Tags: /miao/tags
+#rss: /miao/atom.xml
+
+# Content
+excerpt_link: Read More
+fancybox: true
+
+# Sidebar
+#sidebar: left
+#widgets:
+#- nav
+#- about
+
+# display widgets at the bottom of index pages (pagination == 2)
+index_widgets:
+# - category
+# - tagcloud
+# - archive
+
+# widget behavior
+archive_type: 'monthly'
+show_count: true
+# Miscellaneous
+google_analytics:
+favicon: https://www.solidays.tk/miao/favicon.ico
+twitter:
+google_plus:
+fb_admins:
+fb_app_id:
+
+
+# GalMenu - PC端右键调出，移动端长按
+# galmenu决定是否开启
+# mp3play决定是否开启音效
+galmenu: true
+mp3play: true
+gaymenu_item:
+- name:  
+  url : https://www.solidays.tk/index/
+- name:  
+  url : /
+- name:  
+  url : /tags
+- name:  
+  url : /categories
+- name:  
+  url : /archives
+- name:  
+  url : https://www.solidays.tk/
+
+# 社交链接
+social:
+- url:
+  name:
+
+# 友情链接
+# name : url
+link_title:
+links:
+  #ShanaMaid:
+
+
+# Sidebar Avatar
+# in theme directory(source/images): /images/avatar.jpg
+# in site  directory(source/uploads): /uploads/avatar.jpg
+# 头像
+avatar: https://solidays-1252908379.cosgz.myqcloud.com/images/avatar.jpg
+
+# 网站统计
+# 站长统计 填写id
+# eg:　
+# CNZZ: 123456789
+CNZZ: 
+
+# 评论
+# 友言uid
+uyan: 
+
+# leadcloud访问次数统计
+# 
+leancloud_visitors:
+  enable: false
+  app_id: 
+  app_key: 

@@ -1,0 +1,54 @@
+﻿<footer id="footer">
+  <% if (theme.sidebar === 'bottom'){ %>
+    <%- partial('_partial/sidebar') %>
+  <% } %>
+  <div class="outer">
+    <div id="footer-info" class="inner">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script language="javascript" type="text/javascript"> 
+var interval = 1000; 
+function ShowCountDown(year,month,day,divname) 
+{ 
+var now = new Date(); 
+var endDate = new Date(year, month-1, day); 
+var leftTime=now.getTime()-endDate.getTime(); 
+var leftsecond = parseInt(leftTime/1000); 
+//var day1=parseInt(leftsecond/(24*60*60*6)); 
+var day1=Math.floor(leftsecond/(60*60*24)); 
+var hour=Math.floor((leftsecond-day1*24*60*60)/3600); 
+var minute=Math.floor((leftsecond-day1*24*60*60-hour*3600)/60); 
+var second=Math.floor(leftsecond-day1*24*60*60-hour*3600-minute*60); 
+var cc = document.getElementById(divname); 
+cc.innerHTML = day1+"天"+hour+"小时"+minute+"分"+second+"秒";
+} 
+window.setInterval(function(){ShowCountDown(2017,2,9,'divdown1');}, interval); 
+</script> 
+
+             <center><i class="fa fa-clock-o fa-lg"></i> <span  id="divdown1"></span></center>
+<style type="text/css">
+#line { width:70px; height:0.5px; background-color:#bfbfbf; margin: 4px 0px 7px 0px}
+</style>
+<center><div id="line"></div></center>
+
+            Copyright &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
+            <br>
+            <span id="busuanzi_container_site_uv">
+                <i class="fa fa-user"></i>
+                <span id="busuanzi_value_site_uv"></span>
+            </span>
+            <i>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</i>
+            <span id="busuanzi_container_site_pv">
+                <i class="fa fa-eye"></i>
+                <span id="busuanzi_value_site_pv"></span>
+            </span>
+
+      <% if (theme.CNZZ){ %>
+        |<script src="http://s11.cnzz.com/z_stat.php?id=<%= theme.CNZZ %>&web_id=<%= theme.CNZZ %>" language="JavaScript"></script>
+      <% } %>
+    </div>
+    
+  </div>
+</footer>
+
+
